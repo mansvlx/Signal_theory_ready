@@ -1,0 +1,2 @@
+*.weights filter=lfs diff=lfs merge=lfs -text
+Signal_theory filter=lfs diff=lfs merge=lfs -text
