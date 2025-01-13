@@ -253,7 +253,6 @@ def plot_boxes(filename, img, boxes, class_names, plot_labels, color = None ):
     output_path_apple = "detection_result/apple"
     output_path_orange = "detection_result/orange"
     output_path_banana = "detection_result/banana"
-    output_path_unknown = "detection_result/unknown"
     if (class_names[cls_id]) == "orange":
         output_path_orange = os.path.join(output_path_orange, f"{filename}.png")
         plt.savefig(output_path_orange)
@@ -266,8 +265,4 @@ def plot_boxes(filename, img, boxes, class_names, plot_labels, color = None ):
         output_path_banana = os.path.join(output_path_banana, f"{filename}.png")
         plt.savefig(output_path_banana)
         print('Class of Objects Detected: banana', '\n')
-    else:
-        output_path_unknown = os.path.join(output_path_unknown, f"{filename}.png")
-        plt.savefig(output_path_unknown)
-        print('Class of Objects Detected: unknown', '\n')
     plt.show()
